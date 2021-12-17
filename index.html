@@ -1,0 +1,31 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ASL Tourism</title>
+</head>
+<body>
+    <section>
+        <header>
+            <a href=# class="logo">Maldivas.</a>
+            <div class="toggle" onclick="menuToggle();"></div>
+        </header>
+        <div class="glass"></div>
+        <div class="content">
+            <h2>Hapiness...<br><span>Houses at Shurima, Ocean from Ionia</span></h2>
+        </div>
+        <video src="assets/CurtVideo.mp4" autoplay muted loop></video>
+    </section>
+    <script type="text/javascript">
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.toggle');
+            const section = document.querySelector('section');
+            toggleMenu.classList.toggle('active');
+            section.classList.toggle('active');
+        }
+
+    </script>
+</body>
+</html>
