@@ -1,0 +1,38 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - ASL Tourism</title>
+    <link rel="stylesheet" href="sobre.css">
+    <link rel="sortrcut icon" href="assets/Icone.svg" />
+</head>
+<body>
+    <section>
+        <div class="logo">
+          <header>
+            <a href="index.html" class="logo">ASL Tourism.</a>
+            <div class="toggle" onclick="menuToggle();"></div>
+          </header>
+        </div>
+        <div class="video">
+        <video class="v1" src="assets/sobre.mp4" autoplay muted loop></video>
+        <video class="v2" src="assets/peru.mp4" autoplay muted loop></video>
+        <video class="v3" src="assets/caida.mp4" autoplay muted loop></video>
+        <video class="v4" src="assets/deserto.mp4" autoplay muted loop></video>
+        </div>
+        <div>
+            <h1 class="info">Quem Somos</h1>
+        </div>
+    </section>
+</body>
+
+<script type="text/javascript">
+    function menuToggle(){
+        const toggleMenu = document.querySelector('.toggle');
+        const section = document.querySelector('section');
+        toggleMenu.classList.toggle('active');
+        section.classList.toggle('active');
+    }
+</script>
+</html>

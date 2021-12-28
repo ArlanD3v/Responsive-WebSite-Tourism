@@ -129,6 +129,7 @@ section .content h2{
     line-height: 0.55em;
     text-shadow: 0 5px 5px rgb(0 220 255 / 50%);
     transition: 1s;
+    transition-delay:0.9s;
 }
 
 section .content h2 span{
@@ -161,23 +162,103 @@ section .sci li{
     border-radius: 5px;
     background: #126038;
     transition: 0.5s;
+    transition-delay: calc(0.2s * var(--i));
+    
     text-shadow: 0 5px 5px rgb(0 0 0 / 0.5);
     box-shadow: 0 0 5px rgb(255 255 255 / 90%);
 }
 section.active .sci li{
     opacity: 0;
     visibility: hidden;
-    transform: translateY(100px);
-    transition-duration:1.5s ;
-    
+    transform: translateY(100px); 
 }
 section .sci li a{
     color: rgb(255, 255, 255);
     text-decoration: none;
     display:inline-block;
     letter-spacing: 2px;
-    font-weight: 500;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 11px;
     text-transform: uppercase;
+}
+section .sci li:hover{
+    background: #fff;
+    transition:0s;
+    transition-delay:0s;
+}
+section .sci li a:hover{
+    color:black;
+    text-transform:lowercase;
+}
+section .navigation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+section .navigation li{
+    list-style: none;
+    text-align: center;
+    margin: 15px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: translateX(200px);
+    transition-delay: calc(0.2s * var(--i));
+    
 
+}
+section.active .navigation li{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+    transform: translateX(0px);
+    transition-delay: calc(0.2s * var(--i));
+    
+}
+section .navigation li a{
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    background: #126038;
+    padding: 4 10px;
+    display:inline-block;
+    text-shadow: 0 5px 5px rgb(0 0 0 / 0.5);
+    box-shadow: 0 0 5px rgb(255 255 255 / 90%);
+    border-radius: 5px;
+    
+}
+section .navigation li a:hover{
+    background: #fff;
+    color: rgb(0, 0, 0);
+    letter-spacing: 10px;
+    text-transform: lowercase;
+
+}
+
+@media (max-width: 991px)
+{
+    header{
+        padding:20px;
+    }
+    section .sci{
+       bottom: 20px;
+       right: 20px;
+   }
+   .glass{
+       width: 50%;
+   }
+   section .content h2{
+       font-size: 18vw;
+   }
+   section .content h2 span{
+       font-size: 0.25em;
+       letter-spacing: 2px;
+       padding: 0 5px;
+       
+   }
 }

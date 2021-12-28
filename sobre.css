@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Quicksand:wght@327&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Fuzzy+Bubbles&family=Quicksand:wght@327&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+/* Logo */
+header .logo{
+    position: relative;
+    font-size:2em;
+    color: rgb(255, 255, 255);
+    text-transform:uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+    transition: 1s;
+    }
+    header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 2% 54;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+/* Video */
+video{
+    width: 100%;
+    height: auto;
+}
+.v1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+.v1:hover{
+    transform: scale(1);
+    
+}
+.v2{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+.v3{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+.v4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.info{
+    position: absolute;
+    top: 13%;
+    left:5%;
+    color:#fff
+}
